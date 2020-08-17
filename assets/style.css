@@ -67,3 +67,33 @@ img {
     width: 350px;
   }
 }
+
+.footerLogo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.creators {
+  text-align: center;
+  font-family: cursive;
+  color: skyblue;
+}
+
+#appName {
+  color: skyblue;
+  font-family: cursive;
+}
+
+#topLogo {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}

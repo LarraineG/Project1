@@ -97,3 +97,8 @@ footer {
   height: 125px;
   border-radius: 50%;
 }
+
+.nav-wrapper, #attractionList, #mapCard, .logo-img {
+  border: outset;
+  border-color: skyblue;
+}

@@ -1,6 +1,6 @@
 /* Optional: Makes the sample page fill the window. */
 html body {
-  background-color: darkslategray;
+  background-color: rgb(66, 87, 110);
 }
 
 /* label color "Where do you want to go?" */
@@ -93,7 +93,22 @@ footer {
 }
 
 #topLogo {
-  width: 125px;
-  height: 125px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
+}
+
+.nav-wrapper {
+  background-color:  rgb(66, 87, 110);
+}
+
+#mapCard, .logo-img, #attractionList {
+  border: outset;
+  border-color: skyblue;
+}
+
+#logoSearch {
+  border-top: outset;
+  border-bottom: outset;
+  border-color: skyblue;
 }

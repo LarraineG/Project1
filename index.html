@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Travel Buddy</title>
-    <!--Google Icon Font-->
+    <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- CSS Structure -->
+    <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -20,10 +20,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <header>
-    <div>
-      <h4 id="appName" class="left-align"><img id="topLogo" src="assets/images/logo.jpg">Travel Buddy</h4>
+    <div class="navBar m3">
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><img id="topLogo" src="assets/images/logo.jpg">Travel Buddy</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <!-- Dropdown Trigger -->
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div class="nav-wrapper blue-grey lighten-4 row">
+    <div id="logoSearch" class="nav-wrapper blue-grey lighten-4 row">
       <div class="col m8 s12 right title-div">
         <img
           src="assets/images/aroundtheworld.jpg"
@@ -97,10 +113,10 @@
       </div>
     </div>
 
-    <!--Compiled JS -->
+    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key="API KEY place-holder"&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwPtnt5c8q3p2D4R6axYe1PKhCTVkawcI&libraries=places"></script>
     <script src="script.js"></script>
   </body>
 

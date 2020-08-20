@@ -1,6 +1,8 @@
 /* Optional: Makes the sample page fill the window. */
 html body {
   background-color: rgb(66, 87, 110);
+  background: url("https://scontent.fhou1-1.fna.fbcdn.net/v/t31.0-8/1009683_10200595231593150_1336017382_o.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=_BJmYGGUxLIAX8KOJcd&_nc_ht=scontent.fhou1-1.fna&oh=3777f3b75a70557d424fb58f3f36a210&oe=5F62EA7C");
+  background-position: center;
 }
 
 /* label color "Where do you want to go?" */
@@ -111,4 +113,9 @@ footer {
   border-top: outset;
   border-bottom: outset;
   border-color: skyblue;
+}
+
+nav .brand-logo {
+  font-family: cursive;
+  color: skyblue;
 }

@@ -1,20 +1,15 @@
 var service;
 var map;
 var instance;
-
 $("#findCity").on("click", function(event) {
   event.preventDefault();
   searchForCityByName();
 });
-
 $("input").keypress(event => {
   if (event.which == 13) {
     searchForCityByName();
   }
 });
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   var options = {
     dismissible: true,
@@ -24,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var elem = document.querySelector('.modal');
   instance = M.Modal.init(elem, options);
 });
-
 function convertToTitleCase(str) {
   let words = str.toLowerCase().split(" ");
   words.forEach(function(item, index) {
@@ -32,7 +26,6 @@ function convertToTitleCase(str) {
   })
   return words.join(" ");
 }
-
 function searchForCityByName() {
   var city = $("#search-input").val();
   var APIKey = "089100f1dce99fc69ca132b28b1e31ea";
@@ -63,7 +56,7 @@ function searchForCityByName() {
       fields: ["name", "geometry"]
     };
     service = new google.maps.places.PlacesService(map);
-    service.findPlaceFromQueryOne(request, function(results, status) {
+    service.findPlaceFromQuery(request, function(results, status) {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
           createMarker(results[i]);
@@ -89,7 +82,6 @@ function searchForCityByName() {
     });
   });
 }
-
 function createMarker(place) {
   var marker = new google.maps.Marker({
     map: map,
@@ -100,7 +92,6 @@ function createMarker(place) {
     infowindow.open(map, this);
   });
 }
-
 function myMap(lat, lon) {
   var mapProp = {
     center: new google.maps.LatLng(lat, lon),
@@ -108,3 +99,14 @@ function myMap(lat, lon) {
   };
   return new google.maps.Map(document.getElementById("map"), mapProp);
 }
+
+
+
+
+
+
+
+
+
+
+
